@@ -1,7 +1,8 @@
 const Home = () => {
     return (
         <section className="layout">
-            <h1>Software <br /> Developer</h1>
+            <h1>SOFTWARE <br /> DEVELOPER</h1>
+            <img className="profilepicture" src="./images/Tarik.png" alt="" />
         </section>
     );
 }
