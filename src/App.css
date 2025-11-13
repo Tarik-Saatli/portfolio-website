@@ -13,14 +13,14 @@ body {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 1rem;
+  padding: 2rem 3rem;
   width: 100vw;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 li {
@@ -33,6 +33,16 @@ li a {
   color: black
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-info {
+  display: flex;
+  gap: 55px;
+}
+
 .layout {
   width: 90vw;
   margin: 0 auto;
@@ -40,8 +50,9 @@ li a {
 }
 
 .layout h1 {
-  font-size: 77px;
+  font-size: 90px;
   margin-top: 20px;
+  font-weight: 400;
 }
 
 .profilepicture {
@@ -53,15 +64,56 @@ li a {
 }
 
 .about h1 {
-  font-size: 70px;
-  margin-top: 20px;
+  font-size: 7rem;
+  margin-top: 2rem;
+  font-weight: 400;
   position: absolute;
   right: 90px;
 }
 
-.about {
+.about p {
   font-size: 50px;
-  margin-top: 40px;
-  /* position: absolute;
-  right: 90px; */
+  position: absolute;
+  bottom: 2rem;
+  padding: 0rem 8rem;
 }
+
+.contact h1 {
+  font-size: 5rem;
+  margin: 2rem 2rem;
+  font-weight: 400;
+}
+
+.contact {
+  width: 50%;
+}
+
+
+.form-section {
+ width: 50%;
+ margin: 10rem;
+
+}
+
+.form-section form {
+   display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+
+form input {
+  //maak de input iets minder breed. dus geef het een breedte
+  //border radius
+  //padding in je input
+}
+input {
+  background-color: white;
+}
+
+.contactPage {
+  width: 100%;
+  display: flex;
+}
+
+
