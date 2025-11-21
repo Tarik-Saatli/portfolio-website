@@ -8,13 +8,13 @@ const Contact = () => {
 
             <section className="form-section">
                 <form action="">
-                    <input type="text:" placeholder="Naam" />
+                    <input type="text:" placeholder="NAME" />
 
-                    <input type="text" />
+                    <input type="text:" placeholder="EMAIL" />
 
-                    <input type="text" />
+                    <textarea type="text:" placeholder="BERICHT" />
 
-                    <button>SEND</button>
+                    <button className="contact-knop" >SEND</button>
                 </form>
             </section>
 

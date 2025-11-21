@@ -3,8 +3,9 @@ const About = () => {
         <section className="about">
             <h1>TARIK SAATLI</h1>
 
-            <p>I’m a student Software Developer at Techniek College Rotterdam, focussing on Frontend development.
-                Currently second year and i’m looking for an internship.</p>
+            <p>Ik ben een softwareontwikkelaar in opleiding aan het Techniek College Rotterdam, met een focus op frontend development. Ik zit momenteel in mijn tweede jaar en ben op zoek naar een stage. Ik ben goed in html/CSS, Javascript, Python, en React.
+            </p>
+
         </section>
     );
 }
