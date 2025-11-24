@@ -22,17 +22,17 @@ const ProjectDetails = () => {
 
             <h1 className='titel-detail'>{projects.name}</h1>
             <section className='project-container'>
-                <div  className='text-container'>
+                <div className='text-container'>
                     <p>{projects.description}</p>
                     <a className="github" href={projects.github} target='_blank'>Link naar github</a>
                 </div>
                 <div className='image-container'>
-                {projects.image.map((img)=> (
-                      <img src={img} alt="" />
-                ))}
+                    {projects.image.map((img) => (
+                        <img src={img} alt="" />
+                    ))}
 
 
-                  
+
                 </div>
             </section>
 

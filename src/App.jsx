@@ -6,11 +6,11 @@ import NoPage from './Pages/NoPage';
 import Contact from './Pages/Contact.jsx';
 import Projects from './Pages/Projects.jsx';
 import ProjectDetails from './Pages/ProjectDetails.jsx';
-import "./App.css" 
+import "./App.css"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio-website/">
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />

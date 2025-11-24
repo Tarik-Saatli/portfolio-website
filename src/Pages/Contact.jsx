@@ -8,11 +8,11 @@ const Contact = () => {
 
             <section className="form-section">
                 <form action="">
-                    <input type="text:" placeholder="NAME" />
+                    <input type="text" placeholder="NAME" />
 
-                    <input type="text:" placeholder="EMAIL" />
+                    <input type="text" placeholder="EMAIL" />
 
-                    <textarea type="text:" placeholder="BERICHT" />
+                    <textarea type="text" placeholder="BERICHT" />
 
                     <button className="contact-knop" >SEND</button>
                 </form>

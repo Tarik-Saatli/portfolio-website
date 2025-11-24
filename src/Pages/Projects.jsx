@@ -7,9 +7,9 @@ const Projects = () => {
     const [project, setProjectList] = useState(projectsData);
     const navigate = useNavigate();
 
-const goToDetail = (id) => {
-    navigate(`/projects/${id}`);
-}
+    const goToDetail = (id) => {
+        navigate(`/projects/${id}`);
+    }
     return (
         <section className="project">
             <h1>PROJECTS</h1>
