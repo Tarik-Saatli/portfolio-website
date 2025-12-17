@@ -5,9 +5,8 @@ import projectsData from "../data/projects.js"
 const ProjectDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [projectList, setProjectList] = useState(projectsData);
+    const [projectList] = useState(projectsData);
 
-    // Zoek het juiste product
     const projects = projectList.find(p => p.id === Number(id));
 
     if (!projects) {
@@ -27,8 +26,8 @@ const ProjectDetails = () => {
                     <a className="github" href={projects.github} target='_blank'>Link naar github</a>
                 </div>
                 <div className='image-container'>
-                    {projects.image.map((img) => (
-                        <img src={img} alt="" />
+                    {projects.image.map((img, index) => (
+                        <img key={index} src={`${import.meta.env.BASE_URL}${img}`} alt="" />
                     ))}
 
 
