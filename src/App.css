@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: #D9D9D9;
@@ -50,7 +54,7 @@ li a {
 }
 
 .layout h1 {
-  font-size: 90px;
+  font-size: 9rem;
   margin-top: 20px;
   font-weight: 400;
 }
@@ -62,6 +66,10 @@ li a {
   bottom: 45px;
 }
 
+.about {
+  max-height: 90vh;
+}
+
 .about h1 {
   font-size: 7rem;
   margin-top: 2rem;
@@ -71,14 +79,14 @@ li a {
 }
 
 .about p {
-  font-size: 45px;
+  font-size: 6rem;
   position: absolute;
   bottom: 2rem;
   padding: 0rem 8rem;
 }
 
 .contact h1 {
-  font-size: 5rem;
+  font-size: 9rem;
   margin: 2rem 2rem;
   font-weight: 400;
 }
@@ -239,6 +247,8 @@ input {
 
 .projectknop p {
   font-weight: 600;
+  color: black;
+  -webkit-text-fill-color: black;
 }
 
 .text-container {
@@ -252,5 +262,152 @@ textarea {
   outline: none;
   padding: 10px;
   border-radius: 4px;
+
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Desktop */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .projects-container{
+    flex-direction: column;
+  }
+
+  .project-card{
+    width: 100%;
+  }
+
+  .contactPage {
+    flex-direction: column;
+  }
+
+  .form-section {
+    width: 95%;
+    margin: 1rem;
+  }
+
+  .about p {
+    font-size: 2rem;
+  }
+
+ .about h1 {
+  position: unset;
+ }
+
+ .about p {
+  position: unset;
+  padding: 2rem;
+ }
+
+ .profilepicture {
+  width: 90%;
+  position: unset;
+ }
+
+ .layout h1 {
+  font-size: 6rem;
+ }
+
+ .nav-info {
+  gap: 10px;
+ }
+
+ .nav-info li {
+  font-size: 15px;
+  text-align: center;
+ }
+
+li a {
+  font-size: 15px;
+ }
+
+  /* nav-info blijft zichtbaar */
+    .nav-info {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 1rem;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        display: none;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        border-radius: 6px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+   /* DETAIL PAGE */
+  .titel-detail {
+    font-size: 3rem;
+    margin: 1.5rem 2rem;
+  }
+
+  .projectknop {
+    margin-left: 1rem;
+  }
+
+  .project-container {
+    grid-template-columns: 1fr; /* van 2 kolommen naar 1 */
+    width: 95vw;
+    gap: 2rem;
+  }
+
+  .project-container div {
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  /* Images: ook 1 kolom zodat alles netjes onder elkaar staat */
+  .project-container .image-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .project-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .text-container {
+    max-height: none; /* anders kan tekst raar afkappen */
+  }
+
+  .github {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
 
 }
