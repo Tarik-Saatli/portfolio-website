@@ -9,12 +9,12 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
-  background-color: #D9D9D9;
+  font-family: 'Rubik', sans-serif;
+  background-color: #d9d9d9;
 }
 
 .navigation {
-  font-family: "Italiana", sans-serif;
+  font-family: 'Italiana', sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 2rem 3rem;
@@ -34,7 +34,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: black
+  color: black;
 }
 
 .nav-links {
@@ -50,7 +50,6 @@ li a {
 .layout {
   width: 90vw;
   margin: 0 auto;
-
 }
 
 .layout h1 {
@@ -71,7 +70,7 @@ li a {
 }
 
 .about h1 {
-  font-size: 7rem;
+  font-size: 9rem;
   margin-top: 2rem;
   font-weight: 400;
   position: absolute;
@@ -103,16 +102,13 @@ li a {
 .form-section {
   width: 50%;
   margin: 10rem;
-
 }
 
 .form-section form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
-
 
 form input {
   /* //maak de input iets minder breed. dus geef het een breedte
@@ -121,12 +117,10 @@ form input {
 
   border-radius: 4px;
   padding-left: 9px;
-
 }
 
 ::placeholder {
   color: black;
-
 }
 
 .contact-knop {
@@ -134,7 +128,6 @@ form input {
   border: none;
   height: 35px;
   background-color: white;
-
 }
 
 input {
@@ -144,10 +137,8 @@ input {
   padding: 10px;
 }
 
-
-
 .project h1 {
-  font-size: 5rem;
+  font-size: 9rem;
   margin: 2rem 5rem;
   font-weight: 400;
 }
@@ -173,7 +164,6 @@ input {
   width: 90vw;
   margin: 0 auto;
   cursor: pointer;
-
 }
 
 .github {
@@ -182,7 +172,6 @@ input {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 8px;
-
 }
 
 .project-container {
@@ -208,8 +197,6 @@ input {
   /* Belangrijk: absolute weghalen */
   padding: 1rem 2rem;
   font-size: 2rem;
-
-
 }
 
 .project-container .image-container {
@@ -241,7 +228,7 @@ input {
 
 .projectknop {
   border: none;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   cursor: pointer;
 }
 
@@ -262,36 +249,34 @@ textarea {
   outline: none;
   padding: 10px;
   border-radius: 4px;
-
 }
 
 .nav-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Desktop */
 .nav-links {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
-
 @media only screen and (max-width: 500px) {
-  .projects-container{
+  .projects-container {
     flex-direction: column;
   }
 
-  .project-card{
+  .project-card {
     width: 100%;
   }
 
@@ -308,65 +293,65 @@ textarea {
     font-size: 2rem;
   }
 
- .about h1 {
-  position: unset;
- }
+  .about h1 {
+    position: unset;
+  }
 
- .about p {
-  position: unset;
-  padding: 2rem;
- }
+  .about p {
+    position: unset;
+    padding: 2rem;
+  }
 
- .profilepicture {
-  width: 90%;
-  position: unset;
- }
+  .profilepicture {
+    width: 90%;
+    position: unset;
+  }
 
- .layout h1 {
-  font-size: 6rem;
- }
+  .layout h1 {
+    font-size: 9rem;
+  }
 
- .nav-info {
-  gap: 10px;
- }
+  .nav-info {
+    gap: 10px;
+  }
 
- .nav-info li {
-  font-size: 15px;
-  text-align: center;
- }
+  .nav-info li {
+    font-size: 15px;
+    text-align: center;
+  }
 
-li a {
-  font-size: 15px;
- }
+  li a {
+    font-size: 15px;
+  }
 
   /* nav-info blijft zichtbaar */
-    .nav-info {
-        display: flex;
-        gap: 1rem;
-        font-size: 0.85rem;
-    }
+  .nav-info {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
 
-    .nav-toggle {
-        display: block;
-    }
+  .nav-toggle {
+    display: block;
+  }
 
-    .nav-links {
-        position: absolute;
-        top: 70px;
-        right: 1rem;
-        background: white;
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
-        display: none;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-        border-radius: 6px;
-    }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 1rem;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    display: none;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+  }
 
-    .nav-links.open {
-        display: flex;
-    }
-   /* DETAIL PAGE */
+  .nav-links.open {
+    display: flex;
+  }
+  /* DETAIL PAGE */
   .titel-detail {
     font-size: 3rem;
     margin: 1.5rem 2rem;
@@ -410,4 +395,23 @@ li a {
     font-size: 1.6rem;
   }
 
+  .layout h1 {
+    font-size: 5rem;
+  }
+
+  .contact h1 {
+    font-size: 5rem;
+  }
+
+  .about h1 {
+    font-size: 5rem;
+  }
+
+  .project h1 {
+    font-size: 5rem;
+  }
+
+  .titel-detail {
+    font-size: 5rem;
+  }
 }
